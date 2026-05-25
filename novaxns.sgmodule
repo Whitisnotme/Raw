@@ -1,10 +1,10 @@
 #!name = NovaXNS-DoH
-#!desc = 浣跨敤 NovaXNS DNS-over-HTTPS (DoH)
+#!desc = NovaXNS DNS-over-HTTPS (DoH)
 
 [General]
 allow-dns-svcb = false
-dns-server = 119.29.29.29, 223.5.5.5
-encrypted-dns-server = https://hk1.pro.xns.one/PAAVZDCR104/default/dns-query, https://jp.raito.xns.one/PAAVZDCR104/default/dns-query
+dns-server = 223.5.5.5, 119.29.29.29
+encrypted-dns-server = https://hk1.pro.xns.one/@whitisnotme/admin/dns-query, https://global.novaxns.one/@whitisnotme/admin/dns-query
 
 [Host]
 miwifi.com = 192.168.31.1
