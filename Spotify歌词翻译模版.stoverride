@@ -1,0 +1,18 @@
+name: Spotify歌词翻译
+desc: 在线实时翻译Spotify歌词
+
+http:
+  script:
+    - match: ^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/
+      name: spotify-lyrics
+      type: response
+      require-body: true
+      timeout: 20
+      argument: appid=填入你的appid&securityKey=填入你的密钥
+      binary-mode: true
+      max-size: 0
+ 
+script-providers:
+  spotify-lyrics:
+    url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-lyric.js
+    interval: 86400
